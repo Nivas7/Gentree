@@ -19,27 +19,27 @@ function getVariables() {
     envVars.splice(profilePicIndex, 1);
   }
 
-  const name = envVars
-    .find((val) => val[0] === "VITE_NAME")[1]
-    .replace(/_/g, " ");
+  const name = decodeURIComponent(
+    envVars.find((val) => val[0] === "VITE_NAME")[1]
+  ).replace(/_/g, " ");
   const nameIndex = envVars.findIndex((val) => val[0] === "VITE_NAME");
 
   if (nameIndex !== -1) {
     envVars.splice(nameIndex, 1);
   }
 
-  const handle = envVars
-    .find((val) => val[0] === "VITE_HANDLE")[1]
-    .replace(/_/g, " ");
+  const handle = decodeURIComponent(
+    envVars.find((val) => val[0] === "VITE_HANDLE")[1]
+  ).replace(/_/g, " ");
   const handleIndex = envVars.findIndex((val) => val[0] === "VITE_HANDLE");
 
   if (handleIndex !== -1) {
     envVars.splice(handleIndex, 1);
   }
 
-  const title = envVars
-    .find((val) => val[0] === "VITE_TITLE")[1]
-    .replace(/_/g, " ");
+  const title = decodeURIComponent(
+    envVars.find((val) => val[0] === "VITE_TITLE")[1]
+  ).replace(/_/g, " ");
   const titleIndex = envVars.findIndex((val) => val[0] === "VITE_TITLE");
 
   if (titleIndex !== -1) {
