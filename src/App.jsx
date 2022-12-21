@@ -654,7 +654,7 @@ function App() {
           <Avatar profilePic={profilePic} name={name} rounding={rounding} />
           <p
             className={classNames(
-              "bg-gradient-to-r bg-clip-text text-center text-6xl font-black text-transparent",
+              "bg-gradient-to-r bg-clip-text py-4 text-center text-6xl font-black text-transparent",
               gradientLightFrom,
               gradientLightTo,
               gradientDarkFrom,
