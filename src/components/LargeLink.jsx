@@ -65,14 +65,14 @@ function LargeLink({ link, colors, rounding }) {
           buttonLightColor,
           buttonDarkColor,
           rounding,
-          "inline-flex w-full items-center justify-center border border-transparent px-6 py-3 text-center text-base font-medium shadow-c1 shadow-indigo-400 transition-all hover:shadow-c2 hover:shadow-indigo-400 focus:outline-none focus:ring-2 focus:ring-offset-2",
           buttonLightShadow,
           buttonLightShadowHover,
           buttonLightColorHover,
           buttonDarkShadow,
           buttonDarkShadowHover,
           buttonDarkColorHover,
-          buttonRingFocus
+          buttonRingFocus,
+          "inline-flex w-full items-center justify-center border border-transparent px-6 py-3 text-center text-base font-medium shadow-c1 transition-all hover:shadow-c2 focus:outline-none focus:ring-2 focus:ring-offset-2"
         )}
         target="_blank"
         rel="noopener noreferrer"
