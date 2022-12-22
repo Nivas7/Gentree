@@ -1,4 +1,4 @@
-[context.production]
+[context.production.environment]
   # THESE WILL OVERRIDE VARIABLES STORED IN NETLIFY
   # UNCOMMENT AS NEEDED BY REMOVING THE # AT THE BEGINNING OF THE LINE
   # 
